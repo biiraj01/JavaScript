@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body id="body">
+    <button onclick="changeColor()">Red</button>
+    <button onclick="changeColor1()">Yellow</button>
+    <button onclick="changeColor2()">Green</button>
+    
+    <script>
+        const body=document.getElementById("body");
+    
+        function changeColor(){
+            body.style.backgroundColor = "red";
+        }
+        function changeColor1(){
+            body.style.backgroundColor = "yellow";
+        }
+        function changeColor2(){
+            body.style.backgroundColor = "green";
+        }
+
+        setInterval(function(){
+          console.log('callback function');
+        },5000);
+    </script>
+</html>
